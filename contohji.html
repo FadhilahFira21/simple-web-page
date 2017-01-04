@@ -2,88 +2,121 @@
 <HTML>
 <title>contohji</title>
 <head>
-	<text align="center"><b>Pengisian Biodata</b>
+	<script src="browser.min.js"></script>
+	<script src="react.js"></script>
+	<script src="react-dom.js"></script>
+<style type="text/css">
+#fira{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.data {
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+body{
+    background-image: url(123.png);
+}
+</style>
 </head>
 
-<body><form>
-<label for="name">Nama lengkap</label>
-<input type="text"name"nama" /> <p>
-<label for="sekolah">Asal sekolah </label>
-	<select name="asal sekolah">
-		<option>pilih</option>
-		<option>SMK NEGERI 1 BULUKUMBA</option>
-		<option>SMA NEGERI 1 BULUKUMBA</option>
-		<option>SMA NEGERI 8 BULUKUMBA</option>
-		<option>SMK NEGERI 3 BULUKUMBA</option>
-		<option>SMK NEGERI 5 BULUKUMBA</option>
-	</select><p>
-	<label for="name">kelas</label>
-	<input type="text" size="10" name"kelas"/><p>
-
+<body>
+ <div id="fira"></div>
+ <script type="text/babel">
+function Belajar() {
+	return <p><b>Pengisian  biodata</b></p>;
+}
+function Data () {
+    return <form className="data"> <Lamanweb /> </form>;
+}
+function Lamanweb () {
+    return <div><p><label for="name">Nama lengkap</label>
+<input type="text"name="nama" /></p>
+<p><label for="sekolah">Asal sekolah </label>
+  <select name="asal sekolah">
+    <option>pilih</option>
+    <option>SMK NEGERI 1 BULUKUMBA</option>
+    <option>SMA NEGERI 1 BULUKUMBA</option>
+    <option>SMA NEGERI 8 BULUKUMBA</option>
+    <option>SMK NEGERI 3 BULUKUMBA</option>
+    <option>SMK NEGERI 5 BULUKUMBA</option>
+  </select></p>
+  <p><label for="name">kelas</label>
+  <input type="text" size="10" name="kelas"/>
+</p><p>
 <label for="kota">Asal kota</label>
-<input type="text" name="kota" value="Bulukumba"/><p>
-Alamat  <textarea></textarea><p>
-<label for="tanggal">tanggal lahir</label>
-	<select name="tanggal lahir">
-		<option>pilih</option>
-		<option>1</option>
-		<option>2</option>
-		<option>3</option>
-		<option>4</option>
-		<option>5</option>
-		<option>6</option>
-		<option>7</option>
-		<option>8</option>
-		<option>9</option>
-		<option>10</option>
-		<option>11</option>
-		<option>12</option>
-		<option>13</option>
-		<option>14</option>
-		<option>15</option>
-		<option>16</option>
-		<option>17</option>
-		<option>18</option>
-		<option>19</option>
-		<option>20</option>
-		<option>21</option>
-		<option>22</option>
-		<option>23</option>
-		<option>24</option>
-		<option>25</option>
-		<option>26</option>
-		<option>27</option>
-		<option>28</option>
-		<option>29</option>
-		<option>30</option>
-		<option>31</option>
-	</select>
-	<label for="bulan">bulan</label>
-	<select name="bulan">
-		<option>pilih</option>
-		<option>1</option>
-		<option>2</option>
-		<option>3</option>
-		<option>4</option>
-		<option>5</option>
-		<option>6</option>
-		<option>7</option>
-		<option>8</option>
-		<option>9</option>
-		<option>10</option>
-		<option>11</option>
-		<option>12</option>
-	</select>
+<input type="text" name="kota" value="Bulukumba"/></p>
+<p>Alamat  <textarea></textarea></p>
+<p><label for="tanggal">tanggal lahir</label>
+  <select name="tanggal lahir">
+    <option>pilih</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+    <option>11</option>
+    <option>12</option>
+    <option>13</option>
+    <option>14</option>
+    <option>15</option>
+    <option>16</option>
+    <option>17</option>
+    <option>18</option>
+    <option>19</option>
+    <option>20</option>
+    <option>21</option>
+    <option>22</option>
+    <option>23</option>
+    <option>24</option>
+    <option>25</option>
+    <option>26</option>
+    <option>27</option>
+    <option>28</option>
+    <option>29</option>
+    <option>30</option>
+    <option>31</option>
+  </select>
+  <label for="bulan">bulan</label>
+  <select name="bulan">
+    <option>pilih</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+    <option>11</option>
+    <option>12</option>
+  </select>
 <label for="name">tahun</label>
-<input type="text" size="5" name"tahun"/><p>
-
-<label for="email">Alamat Email Anda</label>
-<input type="email"name"email"/><p>
-
+<input type="text" size="5" name="tahun"/>
+</p>
+<p><label for="email">Alamat Email Anda</label>
+<input type="email"name="email"/></p>
+<p>
 <label for="name">nomor telepon anda</label>
-<input type="text"name"phone"/><p>
-<button>selesai</button>
-</form>
- <body style="background-image:url(123.png)"></body>
-</body>
+<input type="text"name="phone"/></p></div>;
+}
+function Biodata () {
+    return <div><Belajar /> <Data /></div>;
+}
+ReactDOM.render(
+<Biodata />,
+  document.getElementById('fira')
+);
+ </script>
+</body> 
 </HTML>
